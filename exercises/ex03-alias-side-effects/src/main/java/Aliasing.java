@@ -54,7 +54,7 @@ public class Aliasing {
      */
     public static int[] addCopy(int[] arr, int amount) {
         int[] brr = new int[arr.length];
-        for (int i = 0; i < arr.length; i+=1){
+        for (int i =0; i < arr.length; i+=1){
             brr[i] = arr[i] + amount;
         }
         return brr;
