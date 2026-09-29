@@ -21,7 +21,14 @@ public class DigitSum {
      * @return the sum of its decimal digits
      */
     public static int digitSum(int n) {
-        // TODO: complete
-        return 0;
+        int result = 0;
+        if (n<0){
+            n = -n;
+        }
+        if (n / 10 == 0){
+            return result + n;
+        }else{
+            return digitSum(n/10) + n % 10;
+        }
     }
 }
